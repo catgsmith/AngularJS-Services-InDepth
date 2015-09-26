@@ -5,6 +5,5 @@
     
     	$scope.appName = books.appName;
     	console.log("Books: "+ books.appName);
-  });
-  
+  });  
 }());
