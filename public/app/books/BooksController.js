@@ -4,6 +4,6 @@
         .controller('BooksController', function ($scope, books) { 
     
     	$scope.appName = books.appName;
-    	console.log("Books: "+ books.appName);
+    	$scope.appDesc = books.appDesc;
   });  
 }());
