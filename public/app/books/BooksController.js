@@ -1,13 +1,10 @@
 (function() {
   
   angular.module('app')
-        .controller('BooksController', BooksController);
-        
-  function BooksController(books) { 
+        .controller('BooksController', function ($scope, books) { 
     
-    var vm = this;
-    
-    vm.appName = books.appName;
-  }
+    	$scope.appName = books.appName;
+    	console.log("Books: "+ books.appName);
+  });
   
 }());
