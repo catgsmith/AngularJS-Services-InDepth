@@ -16,7 +16,14 @@
     <div ng-controller="BooksController">
         <h1>Hello {{appName}} !</h1>
         <h3>{{appDesc}} !</h3>
-        <p>{{hello}}</p>
+        
+		<h3>All Books</h3>
+		<div>
+			<ul>
+				<li ng-repeat="book in allBooks">{{book.title}} - {{book.author}}</li>
+			</ul>
+		</div>
+
     </div>
 </body>
 

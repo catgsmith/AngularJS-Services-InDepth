@@ -5,6 +5,7 @@
 
             $scope.appName = books.appName;
             $scope.appDesc = books.appDesc;
-            $scope.hello = dataService.sayHello();
+            
+           	$scope.allBooks = dataService.getAllBooks();
         });
 }());
